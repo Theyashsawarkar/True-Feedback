@@ -1,4 +1,4 @@
-# Anonymous Feedback Application
+# 🥷 Anonymous Feedback Application
 
 This is a **Next.js** application designed to allow users to receive anonymous feedback. It uses the **OpenAI API** to generate message suggestions and **Resend API** for handling email communications.
 
@@ -9,8 +9,9 @@ This is a **Next.js** application designed to allow users to receive anonymous f
   
 ## Limitations
 
-- **API Cost**: The current setup is limited by the cost associated with using certain APIs (OpenAI and Resend). The application is designed to work with minimal usage due to these constraints.
-- **Single User**: Only one user can sign up and use the application. This is due to API key restrictions where the email associated with the API key must be used.
+- **API Cost**: The current live project is limited by the cost associated with using certain APIs (OpenAI and Resend). The application is designed to work with minimal usage due to these constraints. But the features are implemented and can be used if you have the respective api keys .
+- **Single User**: Only one user can sign up and use the application. This is due to API key restrictions where the email associated with the API key can only be used.
+- **Message Suggestions:** As the OpenAI api key consts money , you can't get suggestions in a live link of this project . But the feature is implemented and can be used if you have the OpenAI api key.
 
 ## Setup
 
