@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Anonymous Feedback Application
 
-## Getting Started
+This is a **Next.js** application designed to allow users to receive anonymous feedback. It uses the **OpenAI API** to generate message suggestions and **Resend API** for handling email communications.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Anonymous Feedback**: Users can send feedback anonymously.
+- **Message Suggestions**: The app uses OpenAI API to provide message suggestions.
+  
+## Limitations
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **API Cost**: The current setup is limited by the cost associated with using certain APIs (OpenAI and Resend). The application is designed to work with minimal usage due to these constraints.
+- **Single User**: Only one user can sign up and use the application. This is due to API key restrictions where the email associated with the API key must be used.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run the application locally, follow these steps:
 
-## Learn More
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/anonymous-feedback-app.git
+    ```
+2. **Install dependencies**:
+    ```bash
+    cd anonymous-feedback-app
+    npm install
+    ```
+3. **Set up environment variables**:
+   
+   Create a `.env` file in the root of your project and add your API keys:
+    
+4. **Run the development server**:
+    ```bash
+    npm run dev
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+5. **Open the application**:
+   
+   Visit `http://localhost:3000` in your browser to see the application in action.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Sign Up**: Sign up using the email associated with the Resend API key.
+2. **Receive Feedback**: Share the link to your feedback form to receive anonymous feedback.
+3. **Message Suggestions**: Utilize the AI-generated message suggestions to craft responses.
 
-## Deploy on Vercel
+## Future Enhancements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Multi-User Support**: Implementing multi-user support when API cost limitations are resolved.
+- **Enhanced Feedback Options**: Expanding feedback mechanisms beyond text-based inputs.
+- **Improved UI/UX**: Making the application more user-friendly.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+This is an early-stage project with certain limitations due to API costs, but contributions and suggestions for improvement are welcome!
